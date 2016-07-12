@@ -133,18 +133,19 @@ header h1 {
 /** bnav
 /**************************************/
 nav#bnav {
-	position:        absolute;
+	position:        fixed;
 	width:           100%;
 	border-top:      2px solid #f4e4c4;
 	border-bottom:   2px solid #f4e4c4;
 	background:      #fff;
 	z-index:         200;
 	left:            0 !important;
+	bottom:			 0 !important;
 }
 
 nav#bnav.fix {
 	position:        fixed;
-	top:             0 !important;
+	bottom:             0 !important;
 }
 
 nav#bnav > div {
@@ -257,7 +258,7 @@ div#mv div.movie_yt {
 	height:          412px;
 	float:           left;
 	background:      #fff;
-	padding:         7px;
+	padding:         0 7px 7px 7px;
 }
 
 /* MP4 */
@@ -693,6 +694,15 @@ article#column div.frame section div.pic img:hover {
 	opacity:         0.5;
 }
 
+.pic.firstImg,
+.pic.secondImg,
+{
+	width:490px;
+	height:219px;
+	overflow: hidden;
+}
+
+
 article#column div.frame section p.date {
 	margin-top:      10px;
 	font-style:      italic;
@@ -1010,7 +1020,8 @@ article#access div.frame div.info {
 	width:           300px;
 }
 
-article#access div.frame div.info p.tel {
+article#access div.frame div.info p.tel,
+div.tel {
 	border-top:      1px solid #d7d7d7;
 	border-bottom:   1px solid #d7d7d7;
 	margin:          15px 0;
@@ -1019,6 +1030,9 @@ article#access div.frame div.info p.tel {
 	line-height:     1;
 	text-align:      left;
 	background:      url( "../img/pc/access_tel.png" ) left center no-repeat;
+}
+div.tel {
+	margin:          15px auto !important;
 }
 
 article#access div.frame div.info dl dt {
@@ -1196,9 +1210,9 @@ form ul li div textarea {
 }
 
 form ul li:nth-of-type(1) div {
-	background:      #fdece2;
+	/*background:      #fdece2;
 	padding:         10px 5px;
-	border:          1px solid #f4b089;
+	border:          1px solid #f4b089;*/
 }
 
 form ul li div textarea {

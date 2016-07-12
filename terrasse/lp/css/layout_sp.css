@@ -233,7 +233,18 @@ div#fear {
 	background:      #fff7e9;
 	margin-top:      10px;
 	padding:         15px 0;
+	z-index: 10;
+    position: relative;
 }
+
+img.zexybtn {
+	margin-top:-50px;
+}
+
+img.zexybtn_2 {
+	margin-top:-25px;
+}
+
 
 div#fear div.pic {
 	float:           left;
@@ -1020,13 +1031,13 @@ form ul li div textarea {
 	padding:         10px 5px;
 	font-size:       1.4em;
 }
-
+/*
 form ul li:nth-of-type(1) div {
 	background:      #fdece2;
 	padding:         10px 5px;
 	border:          1px solid #f4b089;
 }
-
+*/
 form ul li div textarea {
 	height:          100px;
 }

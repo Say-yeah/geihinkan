@@ -17,7 +17,7 @@ var self = $.lp = {
 		self.map();
 		self.anchor();
 		self.scroll();
-		self.scroll_position();
+		//self.scroll_position();
 		self.viewDetail();
 		self.bnav();
 		self.board();
@@ -238,7 +238,7 @@ var self = $.lp = {
 			{ top: win_h + 55 },
 			{ top: win_h - h, ease: Expo.easeOut }
 		);
-		
+		/*
 		$( window ).scroll( function () {
 			var point = win_h - h;
 			
@@ -256,6 +256,7 @@ var self = $.lp = {
 				}
 			}
 		});
+		*/
 	},
 	
 	
@@ -299,15 +300,18 @@ var self = $.lp = {
 		
 		$( "#board_btn a" ).click( function(){
 			var str   = $( this ).attr( "class" );
-			
 			if ( mode != str && fade == false ) {
-				var on = str == "day" ? day : str == "night" ? night : hall;
+				var on = (str == "day") ? day : (str == "night" ? night : hall);
 				
 				on.css({ "z-index"  : 1 });
 				current.css({ "z-index" : 2 });
 				
 				TweenMax.to( on,      1, { autoAlpha : 1 });
-				TweenMax.to( current, 1, { autoAlpha : 0, delay : 0.5, onComplete : fin });
+				TweenMax.to( current, 1, { 
+					autoAlpha : 0, 
+					delay : 0.5, 
+					onComplete :  function(){fade = false;} , 
+				});
 				
 				fade = true;
 				function fin () { fade = false; }
@@ -389,7 +393,7 @@ var player;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player( 'player', {
 		width:   '710',
-		height:  '399',
+		height:  '408',
 		videoId: 'ziwedac32qk',
 		wmode:   'transparent',
 		playerVars:{
