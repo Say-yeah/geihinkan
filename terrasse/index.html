@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<title>terrasse｜迎賓館</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords"    content="">
+<meta name="viewport"    content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta name="format-detection" content="telephone=no">
+
+<link rel="stylesheet" href="/terrasse/css/element.css">
+<link rel="stylesheet" href="/terrasse/css/layout.css">
+<link rel="stylesheet" href="/terrasse/css/lp.css">
+<link rel="stylesheet" href="/terrasse/css/detail.css">
+
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="/terrasse/js/lib/jquery-1.8.3.min.js"></script>
+<script src="/terrasse/js/lib/jquery.easing.1.3.js"></script>
+<script src="/terrasse/js/lib/lineup.js"></script>
+<script src="/terrasse/js/lib/TweenMax.min.js"></script>
+<script src="/terrasse/js/lib/jquery.pjax.js"></script>
+<script src="/terrasse/js/lp_new.js"></script>
+
+<!--[if lt IE 9]><script src="/terrasse/js/lib/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+
+
+<div id="contents" class="type_top">
+
+
+
+<!-- trigger -->
+<div class="trigger disp_sp">
+	<div>
+		<a class="menu-trigger" href="javascript:void(0);">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+	</div>
+</div>
+<!-- /trigger -->
+
+
+
+<!-- gnav -->
+<nav id="gnav">
+	<ul>
+		<li>
+			<a href="#column" class="anc">
+				<span>COLUMN</span>
+				幸せな時間の作り方
+			</a>
+		</li>
+		<li>
+			<a href="#food" class="anc">
+				<span>PARTY FOOD</span>
+				お食事
+			</a>
+		</li>
+		<li>
+			<a href="#corridor" class="anc">
+				<span>CORRIDOR</span>
+				森の回廊／チャペル
+			</a>
+		</li>
+		<li>
+			<a href="#description" class="anc">
+				<span>BEAUTIFUL BEYOND <br />DESCRIPTIO</span>
+				利用者の声
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span>RESERVATION</span>
+				teRRasse 見学のお申込
+			</a>
+		</li>
+	</ul>
+</nav>
+<!-- /gnav -->
+
+
+
+<!-- header -->
+<header>
+	<h1><img src="/terrasse/img/header_title.gif" width="333" height="94" alt="geihinkan terrasse 祝福と緑に溢れたゲストハウスウェディング" /></h1>
+	<div><img src="/terrasse/img/header_logo.gif" width="91" height="28" alt="迎賓館" /></div>
+</header>
+<!-- /header -->
+
+
+
+<!-- intro -->
+<article id="intro">
+	<div class="photo"><img src="/terrasse/img/intro_photo01.jpg" width="1200" height="600" alt="" /></div>
+	<div class="wrap1100">
+		<h3 class="mt60"><img src="/terrasse/img/intro_lead.gif" width="463" height="64" alt="GUEST HOUSE WEDDING　自然に囲まれた私たちだけの別邸" /></h3>
+		<p class="ac mt60 tx14">
+			森の回廊を抜けてたどりつく美しい別宅。親しい友人や家族と語らいのひとときを大切に考えた<br />
+			ヨーロッパ風のホームウエディングを思わせるパーティースタイルをお楽しみ頂けます。<br />
+			ブッフェを楽しむパーティースタイルやコース料理で和やかに過ごす<br />
+			会食スタイルが選べるだけでなく、昼と夜の時間帯もセレクトできます。<br />
+			<br />
+			さあ、おふたりの teRRasse へどうぞ。
+		</p>
+		<ul class="mt80">
+			<li>
+				<div><img src="/terrasse/img/intro_pic01.jpg" width="340" height="226" alt="" /></div>
+				<h4><img src="/terrasse/img/intro_tx01.gif" width="80" height="24" alt="LOCATION" /></h4>
+				<p>チャペルから続くウッドデッキは森の香りと木漏れ日を直接感じていただくことが出来ます。</p>
+			</li>
+			<li>
+				<div><img src="/terrasse/img/intro_pic02.jpg" width="340" height="226" alt="" /></div>
+				<h4><img src="/terrasse/img/intro_tx02.gif" width="132" height="24" alt="WEDDING STYLE" /></h4>
+				<p>二階建ての一軒家も、それを取り囲むガーデンや森までもがお二人だけのプライベート空間に。</p>
+			</li>
+			<li>
+				<div><img src="/terrasse/img/intro_pic03.jpg" width="340" height="226" alt="" /></div>
+				<h4><img src="/terrasse/img/intro_tx03.gif" width="95" height="24" alt="FOOD MENU" /></h4>
+				<p>祝福の言葉を携えて集まってくれたゲストへ、感謝の想いを伝えるためのまごころを込めた料理をご用意しています。</p>
+			</li>
+		</ul>
+	</div>
+</article>
+<!-- /intro -->
+
+
+
+<!-- column -->
+<article id="column">
+	<div class="wrap1100">
+		<h2><span><img src="/terrasse/img/column_title.gif" width="48" height="9" alt="COLUMN" /></span></h2>
+		<h3><img src="/terrasse/img/column_lead.gif" width="209" height="53" alt="MAKING HAPPY　幸せな時間のつくりかた" /></h3>
+		<ul class="mt70">
+			<li>
+				<div><img src="/terrasse/img/column_thumb01.jpg" width="250" height="168" alt="" /></div>
+				<p>感謝の想いを伝えるための<br />まごころを込めた料理をご用意</p>
+				<a href="page01.html" class="load_btn"><img src="/terrasse/img/btn_more.gif" width="75" height="10" alt="READ MORE" /></a>
+			</li>
+			<li>
+				<div><img src="/terrasse/img/column_thumb02.jpg" width="250" height="168" alt="" /></div>
+				<p>二階にはゆったりしたソファや<br />ウッドデッキをご用意</p>
+				<a href="page02.html" class="load_btn"><img src="/terrasse/img/btn_more.gif" width="75" height="10" alt="READ MORE" /></a>
+			</li>
+			<li>
+				<div><img src="/terrasse/img/column_thumb03.jpg" width="250" height="168" alt="" /></div>
+				<p>レイアウトやお花などの装飾もすべて、<br />お二人だけのオリジナル</p>
+				<a href="#"><img src="/terrasse/img/btn_more.gif" width="75" height="10" alt="READ MORE" /></a>
+			</li>
+			<li>
+				<div><img src="/terrasse/img/column_thumb04.jpg" width="250" height="168" alt="" /></div>
+				<p>ガラス扉から太陽光がたくさん入る<br />会場は、明るくて開放的</p>
+				<a href="#"><img src="/terrasse/img/btn_more.gif" width="75" height="10" alt="READ MORE" /></a>
+			</li>
+		</ul>
+	</div>
+	<div class="photo mt70"><img src="/terrasse/img/column_photo01.jpg" width="1200" height="400" alt="" /></div>
+</article>
+<!-- /column -->
+
+
+
+<!-- food -->
+<article id="food">
+	<div class="wrap1100">
+		<h2><span><img src="/terrasse/img/food_title.gif" width="69" height="9" alt="PARTY FOOD" /></span></h2>
+		<div class="wrap860">
+			<div class="cl box_line2 info">
+				<div class="fl">
+					<h3 class="mt80"><img src="/terrasse/img/food_lead.gif" width="400" height="249" alt="RECIPES FOR SMALL GATHERING　おふたり専属のシェフがゲストの皆様のために腕を奮うフレンチ" /></h3>
+					<p class="mt50">
+						祝福の言葉を携えて集まってくれたゲストへ、感謝の想いを伝えるためのまごころを込めた料理をご用意しています。<br />
+						ブッフェスタイルのパーティーメニューはおふたりで自由にコーディネイトできます。<br />
+						会食スタイルではフランス料理フルコースメニューをご堪能頂けます。
+					</p>
+				</div>
+				<div class="fr ac"><img src="/terrasse/img/food_pic01.jpg" width="400" height="600" alt="" /></div>
+			</div>
+			<div class="cl mt60 box_line2">
+				<div class="fl"><img src="/terrasse/img/food_pic02.jpg" width="400" height="400" alt="" /></div>
+				<div class="fr"><img src="/terrasse/img/food_pic03.jpg" width="400" height="400" alt="" /></div>
+			</div>
+		</div>
+	</div>
+	<div class="photo mt100"><img src="/terrasse/img/food_photo01.jpg" width="1200" height="600" alt="" /></div>
+</article>
+<!-- /food -->
+
+
+
+<!-- corridor -->
+<article id="corridor">
+	<div class="wrap1100">
+		<h2><span><img src="/terrasse/img/corridor_title.gif" width="57" height="9" alt="CORRIDOR" /></span></h2>
+		<div class="wrap860">
+			<div class="cl box_line2 info">
+				<div class="fl ac"><img src="/terrasse/img/corridor_pic01.jpg" width="400" height="600" alt="" /></div>
+				<div class="fr">
+					<h3 class="mt80"><img src="/terrasse/img/corridor_lead.gif" width="400" height="249" alt="A WONDERFUL SERENITY HAS TAKEN POSSESSION　チャペルから続くウッドデッキは森の香りと木漏れ日を" /></h3>
+					<p class="mt50">
+						祝福の言葉を携えて集まってくれたゲストへ、感謝の想いを伝えるためのまごころを込めた料理をご用意しています。<br />
+						ブッフェスタイルのパーティーメニューはおふたりで自由にコーディネイトできます。<br />
+						会食スタイルではフランス料理フルコースメニューをご堪能頂けます。
+					</p>
+				</div>
+			</div>
+			<div class="cl mt60 box_line2">
+				<div class="fl"><img src="/terrasse/img/corridor_pic02.jpg" width="400" height="400" alt="" /></div>
+				<div class="fr"><img src="/terrasse/img/corridor_pic03.jpg" width="400" height="400" alt="" /></div>
+			</div>
+		</div>
+	</div>
+</article>
+<!-- /corridor -->
+
+
+
+<!-- description -->
+<article id="description" class="pt90">
+	<div class="wrap1100">
+		<h3><img src="/terrasse/img/desp_title.gif" width="432" height="53" alt="BEAUTIFUL BEYOND DESCRIPTION　ふたりの幸せな時間の回想録" /></h3>
+		
+		<section>
+			<ul class="mt60">
+				<li class="tx">
+					<h4>西田・三木ご両家さま</h4>
+					<p>「あっと言う間でした。」というのが、率直な感想です。結婚することが決まってから、式場探しを始めたのですが、万博の太陽の塔が大好きだったこともあり、迎賓館を訪れて「ここだ！」と直感で思いました。緑の中で木の温かさを感じることができる教会、ロサンゼルスの一軒家を思わせるテラスハウスは私の理想にぴったりでした。</p>
+				</li>
+				<li><img src="/terrasse/img/desp_pic01.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic02.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic03.jpg" width="250" height="250" alt="" /></li>
+			</ul>
+			<ul>
+				<li class="tx">
+					<h4>内林・近藤　ご両家さま</h4>
+					<p>結婚式の準備は大変だと周りから聞いていましたが、細かく親切にサポートしていただいたので毎月の打ち合わせも楽しく、最後の打ち合わせでは寂しく感じたくらいです。出席した親族からも映画のような結婚式だったと感想をもらい、もう１回結婚式を挙げたい！（笑）と思ったくらいです。        </p>
+				</li>
+				<li><img src="/terrasse/img/desp_pic04.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic05.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic06.jpg" width="250" height="250" alt="" /></li>
+			</ul>
+			<ul>
+				<li class="tx">
+					<h4>畑　哲也さん・さやかさん</h4>
+					<p>招待状や席次やドレス、ヘアスタイルやディスプレイやお花や・・・最初は楽しいけど途中で悩みますし、ぐったりと疲れる事もあると思います。その時は迎賓館の皆さんにどんどん相談してください。きっちり応えてくれますよ。世界でＮＯ．1の幸せな結婚式になることをお祈りいたします。 </p>
+				</li>
+				<li><img src="/terrasse/img/desp_pic07.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic08.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic09.jpg" width="250" height="250" alt="" /></li>
+			</ul>
+			<ul>
+				<li class="tx">
+					<h4>大津・橘 ご両家様</h4>
+					<p>迎賓館は緑が多く時間を忘れるほど、素敵な空間です。スタッフの方はとても気さくで頼りになるので不安なことがあっても、必ず自分達の願いを、そして良い結婚式を叶えてくれると思います。     </p>
+				</li>
+				<li><img src="/terrasse/img/desp_pic10.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic11.jpg" width="250" height="250" alt="" /></li>
+				<li><img src="/terrasse/img/desp_pic12.jpg" width="250" height="250" alt="" /></li>
+			</ul>
+		</section>
+	</div>
+	<div class="photo mt110"><img src="/terrasse/img/desp_photo01.jpg" width="1200" height="600" alt="" /></div>
+</article>
+<!-- /description -->
+
+
+
+<!-- access -->
+<article id="access">
+	<h2><span><img src="/terrasse/img/access_title.gif" width="44" height="9" alt="ACCESS" /></span></h2>
+	<div class="wrap1100">
+		<h3><img src="/terrasse/img/access_lead.gif" width="386" height="95" alt="大阪市内から電車で約10分。約8万坪もの広大な自然の中に佇み、周囲を緑に囲まれた「迎賓館」" /></h3>
+		<div id="map" class="mt60"><div id="google_maps"></div></div>
+		<ul class="mt70">
+			<li>
+				<h4><img src="/terrasse/img/access_tx01.gif" width="48" height="25" alt="TRAIN" /></h4>
+				<p>大阪モノレール彩都線「阪大病院前駅」下車徒歩約15分。迎賓館は万博公園内にございます。</p>
+			</li>
+			<li>
+				<h4><img src="/terrasse/img/access_tx02.gif" width="31" height="25" alt="CAR" /></h4>
+				<p>中国自動車道・名神高速道路「吹田」I.C. から約10分。<br />無料駐車場60台完備。</p>
+			</li>
+			<li>
+				<h4><img src="/terrasse/img/access_tx03.gif" width="32" height="25" alt="TAX" /></h4>
+				<p>所要時間と概算料金<br />※料金は周辺の交通の状態により変わります。</p>
+			</li>
+		</ul>
+	</div>
+</article>
+<!-- /access -->
+
+
+
+<!-- fair -->
+<article id="fair" class="pt70 pb80">
+	<div class="cl wrap860 box_line2">
+		<div class="fl">
+			<div class="label"><p>見学会</p></div>
+			<h3><img src="/terrasse/img/fair_lead.gif" width="400" height="249" alt="TERRACE WEDDING EXPERIENCE FAIR　お二人の邸宅、テラスを少人数用にコーディネート" /></h3>
+			<p class="mt50">
+				お二人の邸宅、テラスを少人数用にコーディネート致します。貸切感を十分に感じていただけるテラスで専属コーディネーターが会食や1・5次会のようなパーティーまで何でもご提案致します。ご見学後には無料試食もお楽しみいただきます。
+			</p>
+		</div>
+		<div class="fr ac"><img src="/terrasse/img/fair_pic01.jpg" width="400" height="600" alt="" /></div>
+	</div>
+</article>
+<!-- /fair -->
+
+
+
+<!-- reservation -->
+<article id="reservation">
+	<div class="wrap1100">
+		<h2><span><img src="/terrasse/img/reserve_title.gif" width="77" height="9" alt="RESERVATION" /></span></h2>
+		<h3><img src="/terrasse/img/reserve_lead.gif" width="262" height="23" alt="terrasseの見学のお申込" /></h3>
+		<p class="ac mt30">
+			terrasseの見学のお申し込みは、下記フォームまたはお電話にてお申し込みください。<br />
+			※営業日以内にスタッフより、メールまたはお電話でご予約内容確認のご連絡をさせて頂きます。
+		</p>
+		<div class="ac">
+			<ul id="flow" class="mt60">
+				<li>
+					<p>
+						フォームまたはお電話にて<br />
+						見学のお申し込み
+					</p>
+				</li>
+				<li>
+					<p>
+						スタッフより<br />
+						お申し込み内容確認の<br />
+						ご連絡、ご予約日時の確定
+					</p>
+				</li>
+				<li>
+					<p>
+						ご予約確定
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contact" class="mt60">
+		<form>
+			<table>
+				<tr>
+					<th>ご希望時間 <span>[必須]</span></th>
+					<td class="radio">
+						<input type="radio" name="time" id="am" value="am" checked="checked"><label for="am">午前</label>　
+						<input type="radio" name="time" id="pm" value="pc"><label for="pm">午後</label>
+					</td>
+				</tr>
+				<tr>
+					<th>お名前 <span>[必須]</span></th>
+					<td><input type="text" class="error" placeholder="この項目は必須入力です。" /></td>
+				</tr>
+				<tr>
+					<th>電話番号 <span>[必須]</span></th>
+					<td><input type="text" placeholder="英数字は半角で入力してください" /></td>
+				</tr>
+				<tr>
+					<th>メールアドレス <span>[必須]</span></th>
+					<td><input type="text" /></td>
+				</tr>
+				<tr>
+					<th>備考 [任意]</th>
+					<td><textarea></textarea></td>
+				</tr>
+			</table>
+			<div class="btn ac mt30"><input type="submit" value="" /></div>
+		</form>
+	</div>
+</article>
+<!-- /reservation -->
+
+
+
+<!-- info -->
+<article id="info" class="cl">
+	<div class="fl">
+		<strong>お申込みはお電話でも受け付けております</strong>
+		<div class="frame">
+			<div><img src="/terrasse/img/reserve_tel.gif" width="283" height="29" alt="TEL.06-6877-3330" /></div>
+			<p>
+				平日（水曜定休）11:00 - 19:00<br />
+				土・日・祝 10:00 - 19:00
+			</p>
+		</div>
+	</div>
+	<div class="fr">
+		<strong>テラスへのアクセスについて</strong>
+		<div class="frame">
+			<p class="tx">
+				無料送迎バス、その他アクセスの詳細情報は<br />
+				<a href="http://www.geihinkan.com/" target="_blank">公式サイト</a><img src="/terrasse/img/icon_blank.gif" width="11" height="9" alt="" />でご案内しています。
+			</p>
+		</div>
+	</div>
+</article>
+<!-- /info -->
+
+
+
+<!-- copyright -->
+<p id="copyright">COPYRIGHT ©GEIHINKAN ALL RIGHTS RESERVED</p>
+<!-- /copyright -->
+
+
+
+<!-- pagetop -->
+<div id="pagetop"><a href="#top" class="anc"><img src="/terrasse/img/btn_pagetop.png" width="37" height="37" alt="" /></a></div>
+<!-- pagetop -->
+
+
+
+<!-- footer sp -->
+<div id="footer_sp">
+	<div><a href="tel:0000000000">お電話はこちら</a></div>
+	<div><a href="#reservation" class="anc">見学申し込みはこちら</a></div>
+</div>
+<!-- footer sp -->
+
+
+
+</div>
+
+
+
+<div id="load_contents_frame"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+
+
+/** common
+/**************************************/
+header {
+	border-bottom:   1px solid #e5e5e5;
+}
+
+div#contents:after {
+	content:         ".";
+	display:         block;
+	height:          0;
+	clear:           both;
+	visibility:      hidden;
+}
+
+div#main {
+	width:           720px;
+	float:           left;
+}
+
+div#side {
+	width:           300px;
+	float:           right;
+}
+
+@media screen and (max-width:1100px) {
+	div#main {
+		width:           65.45%;
+	}
+
+	div#side {
+		width:           27.27%;
+	}
+}
+
+@media screen and (max-width:640px) {
+	div#main {
+		width:           100%;
+		float:           none;
+		margin-bottom:   50px;
+	}
+
+	div#side {
+		width:           100%;
+		float:           none;
+	}
+}
+
+
+
+/** crumb
+/**************************************/
+ul#crumb {
+	margin-bottom:   20px;
+}
+
+ul#crumb li {
+	display:         inline-block;
+	font-size:       1.4em;
+}
+
+ul#crumb li:not(.active):after {
+	content:         url( "/terrasse/img/crumb_arrow.gif" );
+	margin:          0 20px 0 20px;
+}
+
+@media screen and (max-width:640px) {
+	ul#crumb {
+		margin-bottom:   10px;
+	}
+	
+	ul#crumb li:not(.active):after {
+		margin:          0 10px 0 10px;
+	}
+}
+
+
+
+/** entry
+/**************************************/
+article.entry {
+	border-top:      1px solid #787878;
+	padding-top:     50px;
+	margin-bottom:   40px;
+}
+
+div.pop article.entry {
+	padding:         30px 0 40px;
+}
+
+article.entry div.pic {
+	margin-bottom:   25px;
+}
+
+article.entry p.date {
+	font-size:       1.6em;
+	margin-bottom:   10px;
+	font-family:     "Times New Roman","游明朝", YuMincho,"ヒラギノ明朝 Pr6 W6","Hiragino Mincho Pro","HGS明朝E","メイリオ","ＭＳ Ｐ明朝","MS PMincho",Meiryo, serif;
+}
+
+article.entry h2 {
+	font-size:       2.1em;
+	margin-bottom:   20px;
+	font-family:     "Times New Roman","游明朝", YuMincho,"ヒラギノ明朝 Pr6 W6","Hiragino Mincho Pro","HGS明朝E","メイリオ","ＭＳ Ｐ明朝","MS PMincho",Meiryo, serif;
+}
+
+article.entry ul.tag {
+	overflow:        hidden;
+	margin-bottom:   30px;
+}
+
+article.entry ul.tag li {
+	float:           left;
+	border:          1px solid #1a1a1a;
+	padding:         3px 5px;
+	font-size:       1.3em;
+	margin-right:    12px;
+	cursor:          pointer;
+	-webkit-transition:0.2s ease-in-out;
+       -moz-transition:0.2s ease-in-out;
+         -o-transition:0.2s ease-in-out;
+            transition:0.2s ease-in-out;
+}
+
+article.entry ul.tag li:hover {
+	opacity:         0.5;
+}
+
+article.entry p.tx {
+	margin-bottom:   30px;
+	font-size:       1.4em;
+}
+
+article.entry div.btn a {
+	-webkit-transition:0.2s ease-in-out;
+	   -moz-transition:0.2s ease-in-out;
+	     -o-transition:0.2s ease-in-out;
+	        transition:0.2s ease-in-out;
+}
+
+article.entry div.btn a:hover {
+	opacity:         0.6;
+}
+
+@media screen and (max-width:640px) {
+	article.entry {
+		padding-top:     25px;
+		margin-bottom:   20px;
+	}
+	
+	article.entry div.pic {
+		margin-bottom:   10px;
+	}
+	
+	article.entry ul.tag {
+		margin-bottom:   15px;
+	}
+	
+	article.entry p.tx {
+		margin-bottom:   15px;
+	}
+}
+
+
+
+/** entry box01
+/**************************************/
+article.entry section.entry_box01 {
+	overflow:        hidden;
+}
+
+article.entry section {
+	margin-bottom:   30px;
+}
+
+article.entry section h3.hd_entry {
+	font-family:     "Times New Roman","游明朝", YuMincho,"ヒラギノ明朝 Pr6 W6","Hiragino Mincho Pro","HGS明朝E","メイリオ","ＭＳ Ｐ明朝","MS PMincho",Meiryo, serif;
+	font-size:       1.7em;
+	font-weight:     normal;
+	margin-bottom:   15px;
+}
+
+article.entry section.entry_box01 > *:first-child {
+	float:           left;
+}
+
+article.entry section.entry_box01 > *:last-child {
+	float:           right;
+}
+
+article.entry section.entry_box01 div.tx {
+	width:           61.11%;
+}
+
+article.entry section.entry_box01 div.pic {
+	width:           33.33%;
+}
+
+@media screen and (max-width:480px) {
+	article.entry section.entry_box01 > *:first-child,
+	article.entry section.entry_box01 > *:last-child {
+		float:           none !important;
+		width:           100% !important;
+	}
+	
+	article.entry section.entry_box01 div.pic {
+		margin:          20px 0;
+	}
+	
+	article.entry section.entry_box01 div.pic img {
+		width:           100%;
+	}
+}
+
+
+
+/** related
+/**************************************/
+div.related {
+	border:          1px solid #e6e6e6;
+	padding:         30px;
+	overflow:        hidden;
+}
+
+div.related div.related_pic {
+	width:           36.36%;
+	float:           left;
+}
+
+div.related div.info {
+	width:           57.57%;
+	float:           right;
+}
+
+div.related div.info p.date {
+	font-size:       1.3em;
+	margin-bottom:   5px;
+}
+
+div.related div.info h2 {
+	font-size:       1.8em;
+	margin-bottom:   15px;
+}
+
+div.related div.info p.tx {
+	margin-bottom:   15px;
+}
+
+div.related div.info div.btn {
+	margin-top:      5px;
+}
+
+@media screen and (max-width:480px) {
+	div.related {
+		padding:         10px;
+	}
+	
+	div.related div.related_pic,
+	div.related div.info {
+		width:           100%;
+		float:           none;
+	}
+	
+	div.related div.related_pic {
+		margin-bottom:   10px;
+	}
+	
+	div.related div.related_pic img {
+		width:           100%;
+	}
+}
+
+
+
+/** side
+/**************************************/
+div#side aside {
+	margin-top:      50px;
+}
+
+div#side aside h3 {
+	border-bottom:   2px solid #1a1a1a;
+	display:         inline-block;
+	padding-bottom:  10px;
+	margin-bottom:   20px;
+}
+
+@media screen and (max-width:640px) {
+	div#side aside h3 {
+		display:         block;
+		margin-bottom:   10px;
+	}
+}
+
+
+
+/** side > category
+/**************************************/
+aside.category ul li {
+	margin-bottom:   10px;
+}
+
+aside.category ul li a {
+	font-size:       1.3em;
+}
+
+aside.category ul li:before {
+	content:         "・ ";
+}
+
+
+
+/** side > search
+/**************************************/
+aside.search form {
+	width:           100%;
+	position:        relative;
+}
+
+aside.search form input {
+	display:         inline-block;
+	vertical-align:  middle;
+	font-size:       14px;
+	line-height:     24px;
+	color:           #333;
+	box-shadow:      none;
+	border:          1px solid #e6e6e6;
+	height:          32px;
+	padding:         5px 30px 5px 5px;
+	width:           100%;
+	
+}
+
+aside.search form button {
+	position:        absolute;
+	right:           6px;
+	top:             7px;
+	border-style:    none;
+	background:      url( "/terrasse/img/icon_search.gif") no-repeat left center;
+	background-size: 19px 18px;
+	width:           19px;
+	height:          18px;
+	text-indent:     100%;
+	white-space:     nowrap;
+	overflow:        hidden;
+	padding:         0;
+	cursor:          pointer;
+	-webkit-appearance: none;
+}
+
+
+
+/** side > popular
+/**************************************/
+aside.popular ul li {
+	border-bottom:   1px solid #e6e6e6;
+	padding-bottom:  15px;
+	margin-bottom:   15px;
+	overflow:        hidden;
+	position:        relative;
+	-webkit-transition:0.2s ease-in-out;
+       -moz-transition:0.2s ease-in-out;
+         -o-transition:0.2s ease-in-out;
+            transition:0.2s ease-in-out;
+}
+
+aside.popular ul li a {
+	position:        absolute;
+	width:           100%;
+	height:          100%;
+	display:         block;
+}
+
+aside.popular ul li:hover {
+	opacity:         0.5;
+}
+
+aside.popular ul li:last-child {
+	border-bottom:   0;
+}
+
+aside.popular ul li div.pic {
+	float:           left;
+	width:           30%;
+}
+
+aside.popular ul li div.tx {
+	float:           left;
+	width:           63%;
+	margin-left:     7%;
+}
+
+aside.popular ul li p.date {
+	font-size:       1.3em;
+	line-height:     1;
+	margin-bottom:   4px;
+}
+
+aside.popular ul li p.title {
+	font-size:       1.3em;
+}
+
+
+
+/** btn entry
+/**************************************/
+div#btn_entry {
+	background:      #f6f3eb;
+	padding:         70px 0;
+	text-align:      center;
+}
+
+@media screen and (max-width:640px) {
+	div#btn_entry {
+		padding:         30px 0;
+	}
+}
+
+
+
+/** btn close
+/**************************************/
+div.btn_close {
+	border:          1px solid #e6e6e6;
+	text-align:      center;
+	width:           91.63%;
+	margin:          30px auto 40px;
+	-webkit-transition:0.2s ease-in-out;
+       -moz-transition:0.2s ease-in-out;
+         -o-transition:0.2s ease-in-out;
+            transition:0.2s ease-in-out;
+}
+
+div.btn_close:hover {
+	opacity:         0.6;
+}
+
+div.btn_close a {
+	padding:         25px 0;
+	display:         block;
+}
+
+@media screen and (max-width:720px) {
+	div.btn_close a {
+		padding:         15px 0;
+	}
+}
+

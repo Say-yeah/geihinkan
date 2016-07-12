@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+
+
+/** common
+/**************************************/
+.wrap1100 {
+	width:           1100px;
+	margin-left:     auto;
+	margin-right:    auto;
+}
+
+.wrap860 {
+	width:           860px;
+	margin-left:     auto;
+	margin-right:    auto;
+}
+
+.wrap720 {
+	width:           720px;
+	margin-left:     auto;
+	margin-right:    auto;
+}
+
+@media screen and (max-width:1100px) {
+	.wrap1100 {
+		width:           95%;
+	}
+}
+
+@media screen and (max-width:860px) {
+	.wrap860 {
+		width:           95%;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.wrap720 {
+		width:           91.63%;
+	}
+}
+
+
+
+/** header
+/**************************************/
+header {
+	position:        relative;
+	padding:         35px 0;
+}
+
+header h1 {
+	text-align:      center;
+}
+
+header div {
+	position:        absolute;
+	right:           50px;
+	top:             60px;
+}
+
+@media screen and (max-width:640px) {
+	header {
+		position:        relative;
+		padding:         4% 0;
+	}
+	
+	header h1 {
+		text-align:      center;
+	}
+	
+	header h1 img {
+		width:           70%;
+	}
+	
+	header div {
+		right:           1%;
+		top:             50px;
+	}
+	
+	header div {
+		width:           10%;
+	}
+}
+
+
+
+/** info
+/**************************************/
+article#info {
+	width:           900px;
+	margin:          100px auto;
+}
+
+article#info strong {
+	font-size:       1.3em;
+	display:         block;
+	margin-bottom:   35px;
+}
+
+article#info > div {
+	width:           380px;
+	text-align:      center;
+}
+
+article#info div.frame {
+	position:        relative;
+}
+
+article#info div.frame:after {
+	position:        absolute;
+	left:            0;
+	top:             0;
+	content:         url( "/terrasse/img/reserve_frame01.gif" );
+}
+
+article#info div.frame:before {
+	position:        absolute;
+	right:           0;
+	top:             0;
+	content:         url( "/terrasse/img/reserve_frame02.gif" );
+}
+
+article#info div.frame > div {
+	margin-bottom:   10px;
+}
+
+article#info div.frame p.tx {
+	width:           290px;
+	margin:          0 auto;
+	text-align:      left;
+	padding-top:     17px;
+}
+
+article#info div.frame p.tx img {
+	margin:          0 5px;
+}
+
+article#info div.frame p.tx a {
+	color:           #1a1a1a;
+	text-decoration: underline;
+}
+
+@media screen and (max-width:900px) {
+	article#info {
+		width:           90%;
+	}
+	
+	article#info strong {
+		margin-bottom:   20px;
+	}
+	
+	article#info > div {
+		width:           100%;
+		float:           none !important;
+		margin-bottom:   40px;
+	}
+	
+	article#info div.frame p.tx {
+		width:           90%;
+		text-align:      center;
+	}
+	
+	article#info div.frame p.tx br {
+		display:         none;
+	}
+}
+
+@media screen and (max-width:640px) {
+	article#info {
+		margin:          50px auto 0;
+	}
+}
+
+@media screen and (max-width:480px) {
+	article#info div.frame > div img {
+		width:           80%;
+	}
+}
+
+
+/** copyright
+/**************************************/
+p#copyright {
+	margin:          120px 0 70px;
+	text-align:      center;
+}
+
+@media screen and (max-width:640px) {
+	p#copyright {
+		margin:          0 0 35px;
+	}
+}
+
+
+
+/** pagetop
+/**************************************/
+div#pagetop {
+	position:        fixed;
+	right:           20px;
+	bottom:          20px;
+}
+
+div#pagetop a {
+	-webkit-transition:0.2s ease-in-out;
+       -moz-transition:0.2s ease-in-out;
+         -o-transition:0.2s ease-in-out;
+            transition:0.2s ease-in-out;
+}
+
+div#pagetop a:hover {
+	opacity:         0.6;
+}
+
+@media screen and (max-width:768px) {
+	div#pagetop {
+		bottom:          50px;
+	}
+}
+
+
+
+/** footer sp
+/**************************************/
+div#footer_sp {
+	display:         none;
+	position:        fixed;
+	left:            0;
+	bottom:          0;
+	width:           100%;
+	z-index:         10;
+}
+	
+@media screen and (max-width:768px) {
+	div#footer_sp {
+		overflow:        hidden;
+		display:         block;
+	}
+
+	div#footer_sp > div {
+		width:           50%;
+		float:           left;
+		text-align:      center;
+	}
+
+	div#footer_sp > div:first-child {
+		background:      #333;
+	}
+
+	div#footer_sp > div:last-child {
+		background:      #e3c167;
+	}
+
+	div#footer_sp div a {
+		display:         block;
+		padding:         15px 0;
+		color:           #fff;
+		font-size:       1.4em;
+	}
+	
+	div#footer_sp div a:hover {
+		text-decoration: none;
+	}
+}
