@@ -10,6 +10,7 @@
 <meta name="keywords"    content="">
 
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/terrasse/lp/css/lib/slick.css">
 <link rel="stylesheet" href="/terrasse/lp/css/element_pc.css">
 <link rel="stylesheet" href="/terrasse/lp/css/layout_pc.css">
 <link rel="stylesheet" href="/terrasse/css/layout.css">
@@ -25,6 +26,7 @@
 <script src="/terrasse/lp/js/lib/jquery.pjax.js"></script>
 <script src="/terrasse/lp/js/lib/waypoints.min.js"></script>
 <script src="/terrasse/lp/js/lib/TweenMax.min.js"></script>
+<script src="/terrasse/lp/js/lib/slick.min.js"></script>
 <script src="/terrasse/lp/js/lp_pc.js"></script>
 
 <!--[if lt IE 9]><script src="js/lib/html5shiv.js"></script><![endif]-->
@@ -72,30 +74,7 @@
 <!-- main visual -->
 <div id="mv">
 	<div>
-		
-		<!-- YouTube 再生の場合 -->
-		<div class="movie_yt"><div id="player"></div></div>
-		
-		<!-- mp4 再生の場合 -->
-		<!--div class="movie_mp4">
-			<video preload="metadata" width="710" height="399" autoplay>
-				<source src="mp4/intro.mp4" type="video/mp4">
-			</video>
-		</div-->
-		
-		<div class="plan3">
-			<p class="title">teRRasse3つのプラン</p>
-			<p class="name tx01"><span>森林浴</span> プラン</p>
-			<p class="price tx01">￥ <span>570,000</span>～</p>
-			<p class="copy tx01">開放的な美しい緑に包まれる空間が魅力のプラン！</p>
-			<p class="name tx02"><span>月光浴</span> プラン</p>
-			<p class="price tx02">￥ <span>450,000</span>～</p>
-			<p class="copy tx02">夜間スタートでムード満点のプラン！</p>
-			<p class="name tx03"><span>HIBIKI</span> プラン</p>
-			<p class="price tx03">￥ <span>190,000</span>～</p>
-			<p class="copy tx03">少人数OK!コンパクトな会食プラン！</p>
-			<div class="photo"><img src="img/pc/mv_photo.png" width="180" height="158" alt="" /></div>
-		</div>
+		<div class="bnr"><a href="#"><img src="img/pc/bnr_v1.png" width="470" height="283" alt="" /></a></div>
 	</div>
 </div>
 <!-- /main visual -->
@@ -104,250 +83,60 @@
 
 <!-- location -->
 <article id="location">
-	<div class="bnr_fear">
-		<div>
-			<a href="#entry_"></a>
-			<p>席に限りがあります！お申し込みはお早めに</p>
-			<p>大人気ブライダルフェア！少人数ウェディングを体験！</p>
-			<p>おふたりらしさいっぱいのウェディングが叶います！<br />まずはしっかり会場を確認してください！</p>
-			<p>試食付</p>
-			<img src="img/pc/bnr_fear_btn.png" width="94" height="96" alt="お申し込みはコチラから" />
+	<div class="wrap">
+		<div class="headline">
+			<h2><span>ロケーション</span></h2>
+			<div><img src="/terrasse/lp/img/pc/location_title.png" width="174" height="52" alt="Location" /></div>
 		</div>
-	</div>
-	<div class="bg"></div>
-	<div class="cl wrap">
-		<div class="fl">
-			<div class="headline">
-				<h2><span>ロケーション</span></h2>
-				<div><img src="/terrasse/lp/img/pc/location_title.png" width="213" height="64" alt="Location" /></div>
-			</div>
-			<h3 class="lead01 mt40">大阪の自然豊かなロケーション</h3>
-			<p class="tx mt40">
-				迎賓館teRRasseは、万博公園に隣接した大阪の四季折々の豊かな自然が魅力のゲストハウス。<br />
-				お二人の記念すべき1日を、都会の喧噪から離れたゆったりとした時間の中、ゲストと共にお過ごし頂けるスペシャルなロケーションです。<br />
-				色鮮やかな緑が美しい昼間はもちろん、星空のもとキャンドルインスタレーションの幻想的でドラマチックな雰囲気に包まれる、夜間のプランもおすすめです。
-			</p>
-			<div id="board_btn" class="mt20">
-				<a href="javascript:void(0);" class="day">昼間のイメージ</a>
-				<a href="javascript:void(0);" class="night">夜間のイメージ</a>
-				<a href="javascript:void(0);" class="hall">館内イメージ</a>
-			</div>
-		</div>
-		<div class="fr board">
-			<img src="/terrasse/lp/img/pc/location_bg_pic.png" width="703" height="634" alt="" />
-			<img src="/terrasse/lp/img/pc/location_bg_pic_night.png" width="703" height="634" alt="" />
-			<img src="/terrasse/lp/img/pc/location_bg_pic_hall.png" width="703" height="634" alt="" />
-		</div>
+		<h3 class="lead01 mt40">大阪の自然豊かなロケーション</h3>
+		<p class="tx mt40">
+			迎賓館teRRasseは、万博公園に隣接した大阪の四季折々の豊かな自然が魅力のゲストハウス。<br />
+			お二人の記念すべき1日を、都会の喧噪から離れたゆったりとした時間の中、」<br />
+			ゲストと共にお過ごし頂けるスペシャルなロケーションです。
+		</p>
 	</div>
 </article>
 <!-- /location -->
 
 
 
-<!-- party -->
-<article id="party">
-	<div class="wrap">
-		<div class="headline">
-			<h2><span>パーティー<br />スタイル</span></h2>
-			<div><img src="/terrasse/lp/img/pc/party_title.png" width="306" height="86" alt="Party Style" /></div>
-		</div>
-		<h3 class="lead01 mt30">おふたりの希望を叶えるオリジナルウェディング。</h3>
-		<p class="tx mt30 ac">
-			結婚式・パーティーのテーマを決めて、お花や飾り付けや衣装、ペーパーツールのテイストや<br />
-			デザインを決めるコンセプトウエディング。<br />
-			テラスならおふたりのイメージにぴったりのコンセプトウエディングが叶います。
-		</p>
-		<ul>
-			<li>
-				<div><img src="/terrasse/lp/img/pc/party_pic01.jpg" width="285" height="336" alt="" /></div>
-				<p>話題のボーホースタイルも実現できる!お二人のこだわりが詰まったウエディング。</p>
-			</li>
-			<li>
-				<div><img src="/terrasse/lp/img/pc/party_pic02.jpg" width="285" height="336" alt="" /></div>
-				<p>飾らないお二人には、リラックスムードいっぱいのシンプルウエディングがおすすめ!</p>
-			</li>
-			<li>
-				<div><img src="/terrasse/lp/img/pc/party_pic03.jpg" width="285" height="336" alt="" /></div>
-				<p>キュートでガーリーな雰囲気が大好きなお二人にはお花の飾り付けにこだわったフラワーウエディングはいかが?</p>
-			</li>
-		</ul>
-	</div>
-</article>
-<!-- /party -->
-
-
-
-<!-- plan -->
-<article id="plan">
-	<div class="bg">
-		<img src="/terrasse/lp/img/pc/plan_bg_pic.png" width="382" height="521" alt="" />
-	</div>
-	<div class="headline">
-		<h2><span>プラン</span></h2>
-		<div><img src="/terrasse/lp/img/pc/plan_title.png" width="327" height="71" alt="Master Plan" /></div>
-	</div>
-	<h3 class="lead01 mt10 ac">teRRasse3つのプラン</h3>
-	<div class="frame wrap mt40">
-		
-		<section class="cl">
-			<div class="pic fl"><img src="/terrasse/lp/img/pc/plan_fairyland_pic01.jpg" width="515" height="328" alt="" /></div>
-			<div class="info fr">
-				<h3><img src="/terrasse/lp/img/pc/plan_fairyland_title.png" width="408" height="42" alt="森林浴" /></h3>
-				<p class="copy">美しい森の中で響きあう、かけがえのないメモリアル</p>
-				<div class="price">
-					<p class="tx">プラン料金</p>
-					<p class="num"><span>￥</span> 570,000<span>～</span></p>
-				</div>
-				<p class="detail">■30名様〜　■お一人様追加料金　￥13,750</p>
-				<div class="program"><img src="img/pc/plan_fairyland_icon.png" width="488" height="100" alt="" /></div>
-			</div>
-		</section>
-		
-		<section class="cl">
-			<div class="info fl">
-				<h3><img src="/terrasse/lp/img/pc/plan_monnlight_title.png" width="398" height="42" alt="月光浴" /></h3>
-				<p class="copy">美しい星空のもとではじまるドラマティックなイブニング。</p>
-				<div class="price">
-					<p class="tx">プラン料金</p>
-					<p class="num"><span>￥</span> 450,000<span>～</span></p>
-				</div>
-				<p class="detail">■20名様〜　■お一人様追加料金　￥11,050</p>
-				<div class="program"><img src="img/pc/plan_monnlight_icon.png" width="418" height="100" alt="" /></div>
-			</div>
-			<div class="pic fr"><img src="/terrasse/lp/img/pc/plan_monnlight_pic01.jpg" width="515" height="328" alt="" /></div>
-		</section>
-		
-		<section class="cl">
-			<div class="pic fl"><img src="/terrasse/lp/img/pc/plan_hibiki_pic01.jpg" width="515" height="328" alt="" /></div>
-			<div class="info fr">
-				<h3><img src="/terrasse/lp/img/pc/plan_hibiki_title.png" width="386" height="35" alt="HIBIKI" /></h3>
-				<p class="copy">親しい友人と家族に囲まれ過ごすひととき</p>
-				<div class="price">
-					<p class="tx">プラン料金</p>
-					<p class="num"><span>￥</span> 190,000<span>～</span></p>
-				</div>
-				<p class="detail">■10名様〜　■お一人様追加料金　￥18,000</p>
-				<div class="program"><img src="img/pc/plan_hibiki_icon.png" width="138" height="100" alt="" /></div>
-			</div>
-		</section>
-		
-	</div>
-	
-	<div class="bnr_fear">
-		<div>
-			<a href="#entry_"></a>
-			<p>席に限りがあります！お申し込みはお早めに</p>
-			<p>大人気ブライダルフェア！少人数ウェディングを体験！</p>
-			<p>おふたりらしさいっぱいのウェディングが叶います！<br />まずはしっかり会場を確認してください！</p>
-			<p>試食付</p>
-			<img src="img/pc/bnr_fear_btn.png" width="94" height="96" alt="お申し込みはコチラから" />
-		</div>
-	</div>
-
-</article>
-<!-- /plan -->
-
-
-
 <!-- column -->
 <article id="column">
-	<div class="bg">
-		<img src="/terrasse/lp/img/pc/column_bg_pic.png" width="495" height="664" alt="" />
-	</div>
 	<div class="headline">
 		<h2><span>コラム</span></h2>
 		<div><img src="/terrasse/lp/img/pc/column_title.png" width="351" height="65" alt="teRRasse Colmun" /></div>
 	</div>
 	<h3 class="lead01 mt10 ac">幸せな時間のつくりかた</h3>
-	
-	<div class="wrap">
-		<div class="frame cl wrap mt35 fix_height">
-		
-			<section class="fl new">
-				<div class="pic"><a href="/terrasse/page01.html" class="load_btn"><img src="/terrasse/lp/img/pc/column_pic01.jpg" width="490" height="219" alt="" /></a></div>
-				<p class="date">2016.03.03</p>
-				<p class="tx"><a href="../page01.html" class="load_btn">豊かな自然に囲まれて、 大好きなものと一緒にウエディングを</a></p>
-			</section>
-			
-			<section class="fr">
-				<div class="pic"><a href="/terrasse/page01.html" class="load_btn"><img src="/terrasse/lp/img/pc/column_pic02.jpg" width="490" height="219" alt="" /></a></div>
-				<p class="date">2016.03.03</p>
-				<p class="tx"><a href="../page01.html" class="load_btn">レストランウエディング？それとも式場挙式？ 悩んでいる方に明るいお知らせです！</a></p>
-			</section>
-			
-		</div>
-		<ul class="mt15">
+	<div class="slideshow">
+		<ul>
 			<li>
 				<a href="/terrasse/page01.html" class="load_btn"></a>
-				<img src="/terrasse/lp/img/pc/column_pic03.jpg" width="262" height="176" alt="" />
-				<p>披露宴でお茶漬けはいかが？ おふたりのこだわりを料理にも</p>
+				<div class="pic"><img src="img/pc/column_pic01.jpg" width="529" height="466" alt="" /></div>
+				<div class="info">
+					<p class="date">2016/03/18</p>
+					<p class="tx">見た人は必ず恋に落ちる！? テラス・ウエディングの魔法とは☆</p>
+				</div>
 			</li>
 			<li>
 				<a href="/terrasse/page01.html" class="load_btn"></a>
-				<img src="/terrasse/lp/img/pc/column_pic04.jpg" width="262" height="176" alt="" />
-				<p>家族とも友人ともじっくり話したい。 それなら、3部構成スタイルはいかが？</p>
+				<div class="pic"><img src="img/pc/column_pic01.jpg" width="529" height="466" alt="" /></div>
+				<div class="info">
+					<p class="date">2016/03/18</p>
+					<p class="tx">見た人は必ず恋に落ちる！? テラス・ウエディングの魔法とは☆</p>
+				</div>
 			</li>
 			<li>
 				<a href="/terrasse/page01.html" class="load_btn"></a>
-				<img src="/terrasse/lp/img/pc/column_pic05.jpg" width="262" height="176" alt="" />
-				<p>子ども連れのゲストにも喜ばれる 別宅ウェディングとは？</p>
-			</li>
-			<li>
-				<a href="/terrasse/page01.html" class="load_btn"></a>
-				<img src="/terrasse/lp/img/pc/column_pic06.jpg" width="262" height="176" alt="" />
-				<p>10名様でも貸切OK！ 自然あふれる別宅で個性派ウェディング</p>
+				<div class="pic"><img src="img/pc/column_pic01.jpg" width="529" height="466" alt="" /></div>
+				<div class="info">
+					<p class="date">2016/03/18</p>
+					<p class="tx">見た人は必ず恋に落ちる！? テラス・ウエディングの魔法とは☆</p>
+				</div>
 			</li>
 		</ul>
 	</div>
 </article>
 <!-- /column -->
-
-
-
-<!-- food -->
-<article id="food">
-	<div class="bg"><img src="/terrasse/lp/img/pc/food_bg_pic.png" width="444" height="592" alt="" /></div>
-	<div class="head">
-		<div class="wrap">
-			<div class="headline">
-				<h2><span>お料理</span></h2>
-				<div><img src="/terrasse/lp/img/pc/food_title.png" width="283" height="71" alt="Food  Plan" /></div>
-			</div>
-			<p class="tx">
-				teRRasseならお食事のプランも個性的。<br />
-				自由にコーディネートできるブッフェスタイル、フレンチのフルコース、ブリフィックススタイルの会食メニューまで、<br />
-				一流ホテルで腕を磨いたシェフが<br />
-				舌にも目にも美味しいお料理でゲストをおもてなしいたします。
-			</p>
-			<div class="cast"><img src="/terrasse/lp/img/pc/food_cast.png" width="169" height="378" alt="" /></div>
-			<div class="bar"></div>
-		</div>
-	</div>
-	<div class="menu">
-		<section class="cl">
-			<div class="fl">
-				<h3><img src="/terrasse/lp/img/pc/column_logo01.png" width="181" height="52" alt="GOURUMET BUFFET" /></h3>
-				<p>森林浴・月光浴もパーティーメニューは、ドリンクはもちろんパーティーフードも、おふたりで自由にコーディネートできるブッフェスタイル。ご招待する方々のお好みにあわせて、和洋さまざまなジャンルのメニューをご用意できます。</p>
-			</div>
-			<div class="fr"><img src="/terrasse/lp/img/pc/food_pic01.jpg" width="634" height="317" alt="" /></div>
-		</section>
-		<section class="cl">
-			<div class="fl">
-				<h3><img src="/terrasse/lp/img/pc/column_logo02.png" width="193" height="49" alt="FULL-COURSE FRENCH" /></h3>
-				<p>HIBiKIでは、ブリフィックススタイルフレンチのフルコースはもちろん、オプションで［和洋折衷］［ジビエ］をお選び頂けます。</p>
-			</div>
-			<div class="fr"><img src="/terrasse/lp/img/pc/food_pic02.jpg" width="634" height="317" alt="" /></div>
-		</section>
-		<section class="cl">
-			<div class="fl">
-				<h3><img src="/terrasse/lp/img/pc/column_logo03.png" width="211" height="74" alt="GOURUMET BUFFET OPTION MENU MARCHE" /></h3>
-				<p>北摂農家で撮れた新鮮な野菜をふんだんに使用。焼き立ての特製パンと一緒にお召し上がりください。女性にも気軽に召し上がっていただける低カロリーでヘルシーなメニューです。</p>
-			</div>
-			<div class="fr"><img src="/terrasse/lp/img/pc/food_pic03.jpg" width="634" height="317" alt="" /></div>
-		</section>
-	</div>
-</article>
-<!-- /food -->
 
 
 
@@ -357,18 +146,53 @@
 	<div class="head">
 		<div class="wrap">
 			<div class="headline">
-				<h2><span>パーティー<br />コーディネート</span></h2>
+				<h2><span>プラン＆<br />コーディネート</span></h2>
 				<div><img src="/terrasse/lp/img/pc/coordinate_title.png" width="265" height="72" alt="Cordinate" /></div>
 			</div>
-			<p class="tx mt10">
-				teRRasseなら、お花・ドレス・お料理など専門のプランナーと打合せを行いながら<br />
-				お二人のリクエストに沿ったウエディングパーティーの実現が可能です。
+			<p class="tx">
+				teRRasseなら、基本プランをベースにお花・ドレス・お料理など専門のプランナーと打合せを行いながらお二人のリクエストに沿ったウエディングパーティーの実現が可能です。
 			</p>
+			<div class="plan">
+				<div>
+					<h3><img src="img/pc/coordinate_plan01.png" width="187" height="81" alt="" /></h3>
+					<p>
+						開放的な美しい緑に包まれる空間が魅力のプラン！
+					</p>
+				</div>
+				<div>
+					<h3><img src="img/pc/coordinate_plan02.png" width="187" height="80" alt="" /></h3>
+					<p>
+						夜間スタートでドラマティックなナイトウエディング。
+					</p>
+				</div>
+				<div>
+					<h3><img src="img/pc/coordinate_plan03.png" width="195" height="78" alt="" /></h3>
+					<p>
+						少人数OK!親しい友人・ご家族と過ごす会食プラン！
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="pic"><img src="/terrasse/lp/img/pc/coordinate_pic01.jpg" width="1075" height="438" alt="" /></div>
+	<div class="gallery">
+		<div class="cl">
+		<div class="fl">
+			<div class="movie_yt"><div id="player"></div></div>
+		</div>
+		<div class="fr"><img src="img/pc/coordinate_pic01.jpg" width="336" height="399" alt="" /></div>
+		</div>
+		<div class="mt10"><img src="img/pc/coordinate_pic02.jpg" width="1062" height="423" alt="" /></div>
+	</div>
 </article>
 <!-- /coordinate -->
+
+
+
+<!-- bnr entry -->
+<div class="bnr_entry">
+	<a href="#"><img src="img/pc/bnr_v2.png" width="818" height="314" alt="" /></a>
+</div>
+<!-- /bnr entry -->
 
 
 
@@ -441,6 +265,54 @@
 
 
 
+<!-- food -->
+<article id="food">
+	<div class="bg"><img src="/terrasse/lp/img/pc/food_bg_pic.png" width="444" height="592" alt="" /></div>
+	<div class="head">
+		<div class="wrap">
+			<div class="headline">
+				<h2><span>お料理</span></h2>
+				<div><img src="/terrasse/lp/img/pc/food_title.png" width="283" height="71" alt="Food  Plan" /></div>
+			</div>
+			<p class="tx">
+				teRRasseならお食事のプランも個性的。<br />
+				自由にコーディネートできるブッフェスタイル、フレンチのフルコース、ブリフィックススタイルの会食メニューまで、<br />
+				一流ホテルで腕を磨いたシェフが<br />
+				舌にも目にも美味しいお料理でゲストをおもてなしいたします。
+			</p>
+			<div class="cast"><img src="/terrasse/lp/img/pc/food_cast.png" width="169" height="378" alt="" /></div>
+			<div class="bar"></div>
+		</div>
+	</div>
+	<div class="menu">
+		<section class="cl">
+			<div class="fl">
+				<h3><img src="/terrasse/lp/img/pc/column_logo01.png" width="181" height="52" alt="GOURUMET BUFFET" /></h3>
+				<p>森林浴・月光浴もパーティーメニューは、ドリンクはもちろんパーティーフードも、おふたりで自由にコーディネートできるブッフェスタイル。ご招待する方々のお好みにあわせて、和洋さまざまなジャンルのメニューをご用意できます。</p>
+			</div>
+			<div class="fr"><img src="/terrasse/lp/img/pc/food_pic01.jpg" width="634" height="317" alt="" /></div>
+		</section>
+		<section class="cl">
+			<div class="fl">
+				<h3><img src="/terrasse/lp/img/pc/column_logo02.png" width="193" height="49" alt="FULL-COURSE FRENCH" /></h3>
+				<p>HIBiKIでは、ブリフィックススタイルフレンチのフルコースはもちろん、オプションで［和洋折衷］［ジビエ］をお選び頂けます。</p>
+			</div>
+			<div class="fr"><img src="/terrasse/lp/img/pc/food_pic02.jpg" width="634" height="317" alt="" /></div>
+		</section>
+		<section class="cl">
+			<div class="fl">
+				<h3><img src="/terrasse/lp/img/pc/column_logo03.png" width="211" height="74" alt="GOURUMET BUFFET OPTION MENU MARCHE" /></h3>
+				<p>北摂農家で撮れた新鮮な野菜をふんだんに使用。焼き立ての特製パンと一緒にお召し上がりください。女性にも気軽に召し上がっていただける低カロリーでヘルシーなメニューです。</p>
+			</div>
+			<div class="fr"><img src="/terrasse/lp/img/pc/food_pic03.jpg" width="634" height="317" alt="" /></div>
+		</section>
+	</div>
+</article>
+<!-- /food -->
+
+
+
+
 <!-- faq -->
 <article id="faq">
 	<div class="headline">
@@ -503,93 +375,10 @@
 
 
 
-<!-- entry -->
-<article id="entry">
-	<div class="bg"></div>
-	<div class="frame wrap">
-		<h2>teRRasseのブライダルフェア</h2>
-		<div>
-			<div class="mt20 ac"><img src="/terrasse/lp/img/pc/entry_title.png" width="328" height="65" alt="Bridal Fear" /></div>
-			<h3 class="lead01">terrasse見学のお申込</h3>
-			<p class="tx mt30 ac">
-				eRRasseの見学のお申し込みは、下記フォームまたはお電話にてお申し込みください。<br />
-				※営業日以内にスタッフより、メールまたはお電話でご予約内容確認のご連絡をさせて頂きます。
-			</p>
-			<ul class="flow">
-				<li><img src="img/pc/entry_flow01.png" width="95" height="95" alt="step1" /></li>
-				<li>
-					<div>
-						<p>まずはお申し込み</p>
-						<p>フォームまたはお電話にて見学のお申し込み</p>
-					</div>
-				</li>
-				<li><img src="img/pc/entry_flow02.png" width="95" height="95" alt="step1" /></li>
-				<li>
-					<div>
-						<p>日程調整</p>
-						<p>スタッフよりお申し込み内容確認のご連絡、ご予約日時の確定</p>
-					</div>
-				</li>
-				<li><img src="img/pc/entry_flow03.png" width="95" height="95" alt="step1" /></li>
-				<li>
-					<div>
-						<p>ご予約確定</p>
-					</div>
-				</li>
-			</ul>
-			
-			<form>
-				<div class="info">
-					<div class="pic"><img src="img/pc/entry_pic01.jpg" width="341" height="224" alt="" /></div>
-					<div class="detail">
-						<p class="title">
-							<span>大人気！</span><br />
-							<span>少人数ウェディングを体験！テラスフェア</span>
-						</p>
-						<p class="tx">
-							<strong class="border">10名様～の会食／〜60名様のアットホームウェディング</strong>がご希望なら、ぜひテラスのブライダルフェアにご参加ください！<br />
-							<strong>自然豊かなロケーションが魅力のゲストハウス［迎賓館teRRasse（テラス）］</strong>なら、おふたりらしさいっぱいのウェディングが叶います！まずはしっかり会場を確認してください！
-						</p>
-					</div>
-				</div>
-				<ul>
-					<li>
-						<p>テラス体験フェア（試食付き）<br />ご希望の時間帯</p>
-						<div>
-							<input type="radio" name="time" value="10:00" id="val01"> <label for="val01">10:00</label>
-							<input type="radio" name="time" value="18:00" id="val02"> <label for="val02">18:00</label>
-							<input type="radio" name="time" value="その他の時間帯" id="val03"> <label for="val03">その他の時間帯</label>
-						</div>
-					</li>
-					<li>
-						<p>お名前 <span>[必須]</span></p>
-						<div><input type="text" placeholder="例：迎賓館　花子"></div>
-					</li>
-					<li>
-						<p>電話番号 <span>[必須]</span></p>
-						<div><input type="text" placeholder="例：0668773330（半角数字）"></div>
-					</li>
-					<li>
-						<p>メールアドレス <span>[必須]</span></p>
-						<div><input type="text" placeholder="例：半角英数字でご入力下さい。"></div>
-					</li>
-					<li>
-						<p>コメント欄 [任意]</p>
-						<div><textarea></textarea></div>
-					</li>
-				</ul>
-				<button type="submit" class="btnSubmit" value="フェアを予約">フェアを予約</button>
-			</form>
-		</div>
-	</div>
-</article>
-<!-- /entry -->
-
-
-
 <!-- footer -->
 <footer style="height:100px; background:#fbf0d6; margin-top:50px;"></footer>
 <!-- /footer -->
+
 
 
 </div>
@@ -603,4 +392,3 @@
 
 </body>
 </html>
-
