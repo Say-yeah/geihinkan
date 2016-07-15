@@ -185,28 +185,30 @@ nav#bnav {
     position: absolute;
     right: 0;
     top: 160px; }
+    #mv .bnr a:hover {
+      opacity: 0.8; }
 
 /** location
 /**************************************/
-article #location {
+article#location {
   background: url("../img/pc/location_bg.jpg") no-repeat center center;
   background-size: cover;
   height: 589px;
   margin-top: 150px; }
-  article #location > .wrap .headline {
+  article#location > .wrap .headline {
     padding-top: 130px; }
-  article #location > .wrap .tx,
-  article #location > .wrap h3 {
+  article#location > .wrap .tx,
+  article#location > .wrap h3 {
     color: #fff;
     text-shadow: 1px 1px 2px black;
     text-align: center; }
-    article #location > .wrap .tx.tx,
-    article #location > .wrap h3.tx {
+    article#location > .wrap .tx.tx,
+    article#location > .wrap h3.tx {
       font-size: 1.6em; }
 article#column {
   background: #f9f6ec;
   z-index: 1;
-  padding: 90px 0 65px;
+  padding: 90px 0 120px;
   border-top: 2px solid #fff;
   background: url("../img/pc/plan_bg.png"); }
   article#column div.bg {
@@ -307,7 +309,7 @@ article#coordinate {
       background: #e8b142;
       padding: 4px 4px 2px; }
 article#food {
-  padding-bottom: 75px; }
+  padding-bottom: 50px; }
   article#food div.bg {
     position: absolute;
     z-index: 2;
@@ -389,7 +391,8 @@ article#voice {
         font-size: 1.3em; }
 article#faq {
   background: #f3e7cd;
-  padding: 120px 0 60px; }
+  padding: 120px 0 60px;
+  margin-top: 100px; }
   article#faq p.tx {
     font-size: 1.6em; }
   article#faq ul {
@@ -415,21 +418,21 @@ article#faq {
           margin-top: 10px; }
 article#access {
   padding: 40px 0; }
-  article#access p.tx {
+  article#access .tx {
     text-align: center;
     margin: 30px 0 50px; }
-  article#access div.frame {
+  article#access .frame {
     width: 980px;
     margin: 0 auto;
     overflow: hidden; }
-    article#access div.frame div#map {
+    article#access .frame #map {
       float: left;
       width: 640px;
       height: 420px; }
-    article#access div.frame div.info {
+    article#access .frame .info {
       float: right;
       width: 300px; }
-      article#access div.frame div.info p.tel {
+      article#access .frame .info .tel {
         border-top: 1px solid #d7d7d7;
         border-bottom: 1px solid #d7d7d7;
         margin: 15px 0;
@@ -438,11 +441,23 @@ article#access {
         line-height: 1;
         text-align: left;
         background: url("../img/pc/access_tel.png") left center no-repeat; }
+    article#access .frame dl dt {
+      background: #f3e9d2;
+      font-size: 1.2em;
+      text-align: center;
+      padding: 15px 0; }
+    article#access .frame dl dd {
+      padding: 10px 0 20px;
+      font-size: 1.2em;
+      text-align: left;
+      line-height: 1.6; }
 
 @media screen and (max-width: 1300px) {
   article#column div.bg img {
     width: 80%;
     height: auto; } }
+/** bg
+/**************************************/
 @media screen and (max-width: 1350px) {
   article#food div.bg {
     left: -110px; } }
@@ -456,30 +471,6 @@ article#access {
   article#voice div.bg img {
     width: 80%;
     height: auto; } }
-/** access
-/**************************************/
-div.tel {
-  border-top: 1px solid #d7d7d7;
-  border-bottom: 1px solid #d7d7d7;
-  margin: 15px 0;
-  padding: 12px 0 10px 35px;
-  font-size: 2.7em;
-  line-height: 1;
-  text-align: left;
-  background: url("../img/pc/access_tel.png") left center no-repeat;
-  margin: 15px auto !important; }
-
-article#access div.frame div.info dl dt {
-  background: #f3e9d2;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 15px 0; }
-article#access div.frame div.info dl dd {
-  padding: 10px 0 20px;
-  font-size: 1.2em;
-  text-align: left;
-  line-height: 1.6; }
-
 /** ajax loading
 /**************************************/
 div#load_contents_frame {
@@ -519,5 +510,43 @@ div.board {
 /**************************************/
 .bnr_entry {
   text-align: center; }
+  .bnr_entry a:hover {
+    opacity: 0.7; }
+
+/** contact
+/**************************************/
+.contact {
+  margin: 30px auto 100px;
+  text-align: center;
+  width: 1060px; }
+  .contact .title {
+    font-size: 1.6em;
+    padding: 15px 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 30px; }
+  .contact .tx {
+    margin-top: 25px;
+    font-size: 1.3em; }
+
+/** slick
+/**************************************/
+a.slick-next,
+a.slick-prev {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: -23px;
+  z-index: 100; }
+
+a.slick-next {
+  left: 50%;
+  margin-left: 337px; }
+
+a.slick-prev {
+  right: 50%;
+  margin-right: 337px; }
 
 /*# sourceMappingURL=layout_pc.css.map */

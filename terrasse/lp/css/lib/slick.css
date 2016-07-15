@@ -115,24 +115,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-a.slick-next,
-a.slick-prev {
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 46px;
-  height: 50px;
-  margin-top: -23px;
-  z-index: 100;
-}
-
-a.slick-next {
-  left: 50%;
-  margin-left: 337px;
-}
-
-a.slick-prev {
-  right: 50%;
-  margin-right: 337px;
-}

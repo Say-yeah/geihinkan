@@ -21,7 +21,7 @@ var self = $.lp = {
 		self.viewDetail();
 		self.bnav();
 		self.board();
-		self.form_action();
+		//self.form_action();
 		self.slideshow();
 
 		$win = $( window ).width() > $bp;
@@ -211,53 +211,12 @@ var self = $.lp = {
 		var h     = obj.outerHeight();
 		var win_h = $( window ).height();
 		var t     = new TimelineMax();
-		var entry = $( "nav#bnav div.entry img" );
-
-		var f_interval;
-		function scale () {
-			t.to( entry, 0.3, { scale: 1.2, ease: Circ.easeOut })
-			 .to( entry, 0.5, { scale: 1,   ease: Elastic.easeOut });
-		}
-		function interval () {
-			f_interval = setInterval( scale, 3000 );
-		}
-
-		$(window).focus();
-		interval();
-
-		$( window ).bind( "focus", function() {
-			clearInterval( f_interval );
-			interval();
-		}).bind( "blur", function(){
-			clearInterval( f_interval );
-		});
-
-
 
 		obj.css({ "top" : "auto" });
 		TweenMax.fromTo( obj, 0.5,
 			{ top: win_h + 55 },
 			{ top: win_h - h, ease: Expo.easeOut }
 		);
-		/*
-		$( window ).scroll( function () {
-			var point = win_h - h;
-
-			if ( $( this ).scrollTop() > point ) {
-				if ( $f_bnav == false ) {
-					$f_bnav = true;
-					obj.addClass( "fix" );
-				}
-			}
-			else {
-				if ( $f_bnav ) {
-					$f_bnav = false;
-					obj.removeClass( "fix" );
-					obj.css({ "top" : $( window ).height() - h });
-				}
-			}
-		});
-		*/
 	},
 
 
@@ -383,13 +342,11 @@ var self = $.lp = {
 
     var slick_mv = $('.slideshow ul').slick({
     infinite:      true,
-    dots:          true,
+    dots:          false,
     infinite:      true,
     slidesToShow:  1,
     centerMode:    true,
     centerPadding: '30%',
-    autoplay:      false,
-    autoplaySpeed: 3000,
     speed:         1000,
     prevArrow:      "<a href='#' class='slick-prev'><img src='img/pc/column_btn_prev.png'></a>",
     nextArrow:      "<a href='#' class='slick-next'><img src='img/pc/column_btn_next.png'></a>"

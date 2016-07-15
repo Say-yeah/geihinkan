@@ -5,46 +5,47 @@ $bp  = 1060;
 $win = "";
 
 var self = $.lp = {
-	
-	
-	
+
+
+
 	init: function () {
 		self.gnav();
 		self.map();
 		self.viewDetail();
 		self.anchor();
-		self.form_action();
-		
+		//self.form_action();
+		self.slideshow();
+
 		$( window ).resize( function () {
 			self.resize();
 		});
 		self.resize();
-		
+
 		$( window ).load( function() {
 			$( ".fix_height > *" ).matchHeight();
 		});
 	},
-	
-	
-	// ƒŠƒTƒCƒY
+
+
+	// resize
 	resize: function () {
 		var circle = $( "article#party div.bg" );
 		circle.height( circle.width() );
 	},
-	
-	
-	
-	// ƒXƒ}ƒzƒiƒroŒ»
+
+
+
+	// gnav
 	gnav: function () {
-		
+
 		$( 'div#trigger a, nav#gnav a' ).click(function () {
 			$( "nav#gnav" ).fadeToggle( 500 );
 			$( "div#trigger a" ).toggleClass( "close" );
 		});
 	},
-	
-	
-	
+
+
+
 	// GoogleMaps
 	map: function () {
 		google.maps.event.addDomListener(window, 'load', function () {
@@ -62,7 +63,7 @@ var self = $.lp = {
 			streetViewControl:false,
 			mapTypeControll:  false
 		};
-		
+
 		var map = new google.maps.Map( document.getElementById( "map" ), myOptions );
 		var marker = new google.maps.Marker({
 				position : latlng,
@@ -71,14 +72,14 @@ var self = $.lp = {
 			});
 		});
 	},
-	
-	
-	
+
+
+
 	// pjax
 	viewDetail: function () {
 		var obj  = $( "#load_contents_frame" );
 		var home = location.href;
-		
+
 		$( document ).pjax( 'a.load_btn', {
 			container: obj,
 			fragment:  '#load_contents',
@@ -89,18 +90,18 @@ var self = $.lp = {
 				css: true
 			}
 		});
-		
+
 		$(document).on('pjax:beforeSend', function() {
 			obj.show();
 			$( "body" ).addClass( "scroll_none" );
 		});
-		
+
 		$(document).on('pjax:end', function() {
 			obj.addClass( "open" );
 		});
-		
+
 		$(document).on('pjax:success', function() {
-			
+
 			$( "a.detail_close" ).click( function(){
 				obj.removeClass( "open" );
 				history.pushState( 'testButton', null, home );
@@ -119,10 +120,9 @@ var self = $.lp = {
 			}
 		});
 	},
-	
-	
-	
-	// ƒy[ƒW“àƒŠƒ“ƒN
+
+
+
 	anchor: function() {
 		$('a[href^=#]').click(function(e) {
 			e.preventDefault();
@@ -144,7 +144,7 @@ var self = $.lp = {
 			}
 		});
 	},
-	
+
 
 	form_action: function() {
 		if( $("form.wpcf7-form").length )
@@ -172,10 +172,26 @@ var self = $.lp = {
 				}
 			});
 		}
+	},
+
+
+
+	slideshow: function() {
+
+    var slick_mv = $('.slideshow ul').slick({
+    infinite:      true,
+    dots:          false,
+    infinite:      true,
+		slidesToShow:   1,
+		slidesToScroll: 1,
+    speed:         1000,
+    prevArrow:      "<a href='#' class='slick-prev'><img src='img/pc/column_btn_prev.png'></a>",
+    nextArrow:      "<a href='#' class='slick-next'><img src='img/pc/column_btn_next.png'></a>"
+    });
 	}
-	
-	
-	
+
+
+
 }
 $(function () { self.init(); });
 })(jQuery);
@@ -197,7 +213,7 @@ function onYouTubeIframeAPIReady() {
 		playerVars:{
 			'loop':     '0',
 			'rel':      '0',
-			'showinfo': '0' 
+			'showinfo': '0'
 		},
 		events: {
 			'onReady': onPlayerReady

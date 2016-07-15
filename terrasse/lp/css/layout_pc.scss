@@ -276,12 +276,16 @@ nav#bnav {
 		position: absolute;
 		right: 0;
 		top: 160px;
+
+		a:hover {
+			opacity: 0.8;
+		}
 	}
 }
 /** location
 /**************************************/
 article {
-	#location {
+	&#location {
 		background: url("../img/pc/location_bg.jpg") no-repeat center center;
 		background-size: cover;
 		height: 589px;
@@ -308,7 +312,7 @@ article {
 	&#column {
 		background: #f9f6ec;
 		z-index: 1;
-		padding: 90px 0 65px;
+		padding: 90px 0 120px;
 		border-top: 2px solid #fff;
 		background: url("../img/pc/plan_bg.png");
 
@@ -456,7 +460,7 @@ article {
 	}
 
 	&#food {
-		padding-bottom: 75px;
+		padding-bottom: 50px;
 
 		div {
 			&.bg {
@@ -581,6 +585,7 @@ article {
 	&#faq {
 		background: #f3e7cd;
 		padding: 120px 0 60px;
+		margin-top: 100px;
 
 		p.tx {
 			font-size: 1.6em;
@@ -623,37 +628,51 @@ article {
 	&#access {
 		padding: 40px 0;
 
-		p.tx {
+		.tx {
 			text-align: center;
 			margin: 30px 0 50px;
 		}
 
-		div.frame {
+		.frame {
 			width: 980px;
 			margin: 0 auto;
 			overflow: hidden;
 
-			div {
-				&#map {
-					float: left;
-					width: 640px;
-					height: 420px;
+			#map {
+				float: left;
+				width: 640px;
+				height: 420px;
+			}
+
+			.info {
+				float: right;
+				width: 300px;
+
+				.tel {
+					border-top: 1px solid #d7d7d7;
+					border-bottom: 1px solid #d7d7d7;
+					margin: 15px 0;
+					padding: 12px 0 10px 35px;
+					font-size: 2.7em;
+					line-height: 1;
+					text-align: left;
+					background: url("../img/pc/access_tel.png") left center no-repeat;
+				}
+			}
+
+			dl {
+				dt {
+					background: #f3e9d2;
+					font-size: 1.2em;
+					text-align: center;
+					padding: 15px 0;
 				}
 
-				&.info {
-					float: right;
-					width: 300px;
-
-					p.tel {
-						border-top: 1px solid #d7d7d7;
-						border-bottom: 1px solid #d7d7d7;
-						margin: 15px 0;
-						padding: 12px 0 10px 35px;
-						font-size: 2.7em;
-						line-height: 1;
-						text-align: left;
-						background: url("../img/pc/access_tel.png") left center no-repeat;
-					}
+				dd {
+					padding: 10px 0 20px;
+					font-size: 1.2em;
+					text-align: left;
+					line-height: 1.6;
 				}
 			}
 		}
@@ -665,6 +684,8 @@ article {
 		height: auto;
 	}
 }
+/** bg
+/**************************************/
 @media screen and (max-width: 1350px) {
 	article#food div.bg {
 		left: -110px;
@@ -684,37 +705,6 @@ article {
 	article#voice div.bg img {
 		width: 80%;
 		height: auto;
-	}
-}
-/** access
-/**************************************/
-div.tel {
-	border-top: 1px solid #d7d7d7;
-	border-bottom: 1px solid #d7d7d7;
-	margin: 15px 0;
-	padding: 12px 0 10px 35px;
-	font-size: 2.7em;
-	line-height: 1;
-	text-align: left;
-	background: url("../img/pc/access_tel.png") left center no-repeat;
-	margin: 15px auto !important;
-}
-
-article {
-	&#access div.frame div.info dl {
-		dt {
-			background: #f3e9d2;
-			font-size: 1.2em;
-			text-align: center;
-			padding: 15px 0;
-		}
-
-		dd {
-			padding: 10px 0 20px;
-			font-size: 1.2em;
-			text-align: left;
-			line-height: 1.6;
-		}
 	}
 }
 /** ajax loading
@@ -768,4 +758,50 @@ div.board {
 /**************************************/
 .bnr_entry {
 	text-align: center;
+
+	a:hover {
+		opacity: 0.7;
+	}
+}
+/** contact
+/**************************************/
+.contact {
+	margin: 30px auto 100px;
+	text-align: center;
+	width: 1060px;
+
+	.title {
+		font-size: 1.6em;
+		padding: 15px 0;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 2px solid #e5e5e5;
+		margin-bottom: 30px;
+	}
+
+	.tx {
+		margin-top: 25px;
+		font-size: 1.3em;
+	}
+}
+/** slick
+/**************************************/
+a.slick-next,
+a.slick-prev {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: -23px;
+  z-index: 100;
+}
+
+a.slick-next {
+  left: 50%;
+  margin-left: 337px;
+}
+
+a.slick-prev {
+  right: 50%;
+  margin-right: 337px;
 }
